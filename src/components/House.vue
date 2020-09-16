@@ -1,5 +1,5 @@
 <template>
-    <div class="col-4 house">
+  <div class="col-4 house">
     <router-link :to="{name: 'HouseDetails', params: { id: houseData._id}}">
       <div class="card">
         <img class="card-img-top" :src="houseData.imgUrl" alt />

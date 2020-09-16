@@ -32,7 +32,12 @@ export default {
     }
   },
   methods:{
+    deleteHouse(){
 
+    },
+    bid(){
+      
+    }
   }
 }
 </script>

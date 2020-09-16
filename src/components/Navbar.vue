@@ -8,10 +8,10 @@
       <li class="nav-item" :class="{ active: $route.name == 'Cars' || $route.name == 'CarDetails' }">
         <router-link :to="{ name: 'Cars' }" class="nav-link">Cars</router-link>
       </li>
-      <li class="nav-item" :class="{ active: $route.name == 'Jobs' }">
+      <li class="nav-item" :class="{ active: $route.name == 'Jobs' || $route.name == 'JobsDetails'}">
         <router-link :to="{ name: 'Jobs' }" class="nav-link">Jobs</router-link>
       </li>
-      <li class="nav-item" :class="{ active: $route.name == 'Houses' }">
+      <li class="nav-item" :class="{ active: $route.name == 'Houses' || $route.name == 'HouseDetails'}">
         <router-link :to="{ name: 'Houses' }" class="nav-link">Houses</router-link>
       </li>
     </ul>
