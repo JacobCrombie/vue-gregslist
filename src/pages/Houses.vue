@@ -19,7 +19,7 @@
           <div class="form-group p-1">
             <label class="mr-1" for="bathrooms">Bathrooms</label>
             <input
-              v-bathrooms="newHouse.bathrooms"
+              v-model="newHouse.bathrooms"
               type="text"
               name="bathrooms"
               id="bathrooms"
@@ -88,12 +88,12 @@
               placeholder="Image Url..."
             />
           </div>
-          <button type="submit" class="btn btn-outline-success">Add Car</button>
+          <button type="submit" class="btn btn-outline-success">Add House</button>
         </form>
       </div>
     </div>
     <div class="row" id="data">
-      <car v-for="house in houses" :key="house._id" :houseData="house" />
+      <house v-for="house in houses" :key="house._id" :houseData="house" />
     </div>
   </main>
 </template>

@@ -4,7 +4,7 @@
       <div class="card">
         <img class="card-img-top" :src="houseData.imgUrl" alt />
         <div class="card-body">
-          <h4 class="card-title">{{houseData.make}} - {{houseData.model}} - {{houseData.year}}</h4>
+          <h4 class="card-title">{{houseData.bedrooms}} - {{houseData.bathrooms}} - {{houseData.year}}</h4>
         </div>
       </div>
     </router-link>
