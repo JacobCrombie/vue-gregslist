@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import CarDetails from '../pages/CarDetails.vue'
 import Cars from '../pages/Cars.vue'
+import Houses from '../pages/Houses.vue'
 
 Vue.use(VueRouter)
 
@@ -16,6 +17,16 @@ const routes = [
     name: 'CarDetails',
     component: CarDetails
   },
+  {
+    path: '/houses',
+    name: 'Houses',
+    component: Houses
+  },
+  // {
+  //   path: '/houses/:id',
+  //   name: 'HouseDetails',
+  //   component: HouseDetails
+  // },
   {
     path: '*',
     redirect: '/cars'

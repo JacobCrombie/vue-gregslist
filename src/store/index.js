@@ -8,7 +8,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     cars: [],
-    activeCar: {}
+    activeCar: {},
+    houses:[],
   },
   mutations: {
     setCars(state, cars) {
@@ -22,6 +23,9 @@ export default new Vuex.Store({
     },
     removeCar(state, id) {
       state.cars = state.cars.filter(c => c.id != id)
+    },
+    setHouses(state, houses){
+      state.houses = houses
     }
   },
   actions: {
@@ -73,6 +77,14 @@ export default new Vuex.Store({
         router.push({ name: "Cars" })
       } catch (error) {
         console.error(error)
+      }
+    },
+    async getAllHouses({commit, dispatch}){
+      try {
+        let res = await api.get('houses')
+        commit("setHouses", res.data.data)
+      } catch (error) {
+        console.error(error);
       }
     }
   }
